@@ -2,7 +2,7 @@
 
 [![Licença: CC BY 4.0](https://img.shields.io/badge/Licen%C3%A7a-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-Repositório de organização dos **encontros mensais ampliados** do [Laboratório de Humanidades Digitais da UFBA (LABHDUFBA)](https://labhdufba.ufba.br).
+Repositório de organização dos **encontros mensais ampliados** do [Laboratório de Humanidades Digitais da UFBA (LABHDUFBA)](https://labhdufba.github.io).
 
 O LABHDUFBA reúne pesquisadores interessados na confluência entre humanidades, dados e tecnologias digitais, desenvolvendo metodologias computacionais aplicadas a questões como desinformação, história digital e análise de redes sociais. Os encontros mensais ampliados nasceram da necessidade de abrir esse espaço para além do núcleo fixo do laboratório, convidando estudantes de graduação e pós-graduação, pesquisadores de outras instituições e demais interessados a participar do intercâmbio intelectual que caracteriza o LABHDUFBA. O objetivo é criar um ponto de encontro regular onde diferentes trajetórias e perspectivas se cruzem em torno das humanidades digitais, fortalecendo a comunidade de prática e ampliando o alcance das discussões produzidas no laboratório.
 
@@ -10,7 +10,7 @@ O LABHDUFBA reúne pesquisadores interessados na confluência entre humanidades,
 
 Os encontros acontecem toda **primeira sexta-feira do mês, às 14h**, alternando entre dois formatos:
 
-- **Debate de texto** — leitura e discussão coletiva de um texto relevante para as humanidades digitais
+- **Debate de texto** — leitura e discussão coletiva de um texto relevante para as humanidades digitais ou discussão de produções de membros do laboratório.
 - **Debate de ferramenta/método** — apresentação e discussão prática de uma ferramenta ou abordagem metodológica
 
 Cada edição conta com um(a) responsável diferente, que propõe o tema e conduz a discussão.

@@ -1,6 +1,7 @@
 # Encontro Mensal LABHDUFBA — Abril 2026
 
 **Data:** 10 de abril de 2026, sexta-feira, às 14h
+
 **Formato:** Online — Google Meet *(link em breve)*
 
 ---
@@ -13,7 +14,8 @@ Convidamos pesquisadores, estudantes e colaboradores para a primeira edição do
 
 ## Texto em debate
 
-SOBREIRA, Victor. Um panorama da História da Inteligência Artificial e suas aplicações na pesquisa histórica. *Varia Historia*, v. 41, p. e25035, 2 jun. 2025.
+>SOBREIRA, Victor. Um panorama da História da Inteligência Artificial e suas aplicações na pesquisa histórica. *Varia Historia*, v. 41, p. e25035, 2 jun. 2025.
+
 [Acesso pelo Scielo](https://www.scielo.br/j/vh/a/rBFnX4gCZ4N8fcRt6mjxbFQ/?lang=pt) | [DOI](https://doi.org/10.1590/0104-87752025v41e25035)
 
 ## Responsável pela discussão

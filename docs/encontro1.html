@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+<script src="encontro1_files/libs/clipboard/clipboard.min.js"></script>
+<script src="encontro1_files/libs/quarto-html/tabby.min.js"></script>
+<script src="encontro1_files/libs/quarto-html/popper.min.js"></script>
+<script src="encontro1_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="encontro1_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="encontro1_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="encontro1_files/libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.26">
+
+  <meta name="author" content="Eric Brasil">
+  <title>História da Inteligência Artificial</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="encontro1_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="encontro1_files/libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="encontro1_files/libs/revealjs/dist/theme/quarto-99eeafcedac04850354b682963cedae3.css">
+  <link href="encontro1_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="encontro1_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="encontro1_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="encontro1_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="encontro1_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="encontro1_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">História da Inteligência Artificial</h1>
+  <p class="subtitle"><br>Encontros Mensais — LABHDUFBA</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Eric Brasil 
+</div>
+<div class="quarto-title-author-email">
+<a href="mailto:profericbrasil@gmail.com">profericbrasil@gmail.com</a>
+</div>
+        <p class="quarto-title-affiliation">
+            UNILAB | PPGIHD/UFRRJ | LABHDUFBA
+          </p>
+    </div>
+</div>
+
+  <p class="date">sexta-feira, 10 de abril de 2026</p>
+</section>
+<section id="nota-sobre-o-uso-de-ia-generativa" class="slide level2 center">
+<h2>Nota sobre o uso de IA Generativa</h2>
+<p>🛠️ Esta apresentação foi <strong>produzida com o apoio do Claude Code (modelo Sonnet 4.6)</strong>, entre os dias <strong>09 e 10 de abril de 2026</strong>, a partir de instruções e curadoria do professor <strong>Eric Brasil</strong>.</p>
+</section>
+<section id="o-que-é-inteligência-artificial" class="slide level2 columns center">
+<h2>O que é Inteligência Artificial?</h2>
+<p><br></p>
+<div class="column" style="width:40%;">
+<p><img data-src="https://ericbrasil.com.br/cclhm00114/aulas/assets/IA-BOT_ChatGPT_20250410_091806.png"></p>
+</div><div class="column" style="width:60%;">
+<p><br> <br></p>
+<blockquote>
+<p>💬 Já discutiram o texto?</p>
+</blockquote>
+</div></section>
+<section id="alan-turing-e-a-pergunta-fundamental" class="slide level2 center">
+<h2>Alan Turing e a pergunta fundamental</h2>
+<blockquote>
+<p>“Can machines think?” <a href="https://doi.org/10.1093/mind/LIX.236.433"><em>Computing Machinery and Intelligence</em> (1950)</a></p>
+</blockquote>
+<ul>
+<li><p>Essa pergunta é substituída por outra:<br>
+<strong>Uma máquina pode imitar um ser humano a ponto de enganar um observador?</strong></p></li>
+<li><p>Essa proposta dá origem ao que hoje chamamos de <strong>Teste de Turing</strong>.</p></li>
+</ul>
+</section>
+<section id="quem-foi-alan-turing" class="slide level2 columns center">
+<h2>Quem foi Alan Turing?</h2>
+<div class="column" style="width:70%;">
+<ul>
+<li><strong>Alan Mathison Turing</strong> (1912–1954)<br>
+</li>
+<li>Matemático britânico, pioneiro na computação;</li>
+<li>Criou o conceito de <strong>máquina universal</strong> – base dos computadores;</li>
+<li>Atuou no projeto <strong>Enigma</strong>, quebrando códigos nazistas;</li>
+<li>Propôs o <strong>Teste de Turing</strong> (Jogo da Imitação, 1950);</li>
+</ul>
+</div><div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Alan_Turing_Aged_16.jpg"></p>
+<figcaption>Alan Turing aos 16 anos.</figcaption>
+</figure>
+</div>
+</div></section>
+<section id="perseguição-estatal" class="slide level2 center">
+<h2>Perseguição estatal</h2>
+<ul>
+<li>Em 1952, Turing foi condenado por <strong>homossexualidade</strong>, então considerada crime no Reino Unido;</li>
+<li>Foi submetido à <strong>castração química</strong> como pena alternativa à prisão;</li>
+<li>Morreu em 1954, em circunstâncias interpretadas como <strong>suicídio</strong>.</li>
+</ul>
+</section>
+<section id="reconhecimento-póstumo" class="slide level2 columns center">
+<h2>🏳️‍🌈 <strong>Reconhecimento póstumo</strong></h2>
+<div class="column" style="width:60%;">
+<ul>
+<li>Em 2009, o governo britânico emitiu um pedido público de desculpas;</li>
+<li>Em 2013, recebeu <strong>perdão póstumo oficial</strong> da Rainha Elizabeth II;</li>
+<li>Hoje é símbolo da luta por direitos LGBTQIA+ e liberdade científica.</li>
+</ul>
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Alan_Turing_by_Stephen_Kettle_2007.jpg"></p>
+<figcaption>Estátua de Alan Turing</figcaption>
+</figure>
+</div>
+</div></section>
+<section id="blade-runner-1982-dir.-ridley-scott" class="slide level2 center">
+<h2>Blade Runner (1982), dir. Ridley Scott</h2>
+<video controls="" width="100%" src="https://ericbrasil.com.br/cclhm00114/aulas/assets/blade_runner_1080p.webm" crossorigin="anonymous">
+</video>
+</section>
+<section class="slide level2">
+
+<h3 class="center" id="her-2013-dir.-spike-jonze">Her (2013), dir. Spike Jonze</h3>
+
+<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDNpbjV2cnZ2MmwydXNkZDc0ZHVtNGtrZTB4YnFxZXlwbzRvdXBqayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/unyYJeETm09laXfGui/giphy.gif" width="80%" class="r-stretch"><blockquote>
+<p>🧠 O que significa “amar” uma IA?</p>
+<p>Até que ponto uma consciência artificial pode ser considerada uma <em>pessoa</em>?</p>
+</blockquote>
+</section>
+<section class="slide level2">
+
+<h3 class="center" id="ex-machina-2014-dir.-alex-garland">Ex Machina (2014), dir. Alex Garland</h3>
+
+<img data-src="https://ericbrasil.com.br/cclhm00114/aulas/assets/gif_ava.gif" class="r-stretch"><blockquote>
+<p>👁️ A IA passa no Teste de Turing — mas ela está realmente <em>consciente</em>?</p>
+<p>❤️O afeto é um critério válido para reconhecer inteligência?</p>
+</blockquote>
+</section>
+<section id="ia-generativa-ia-geral" class="slide level2 columns center">
+<h2>IA Generativa ≠ IA Geral</h2>
+<div class="column" style="width:49%;">
+<p>🤖 <strong>IA Generativa (IAGen)</strong></p>
+<ul>
+<li>Especializada em geração e processamento de linguagem, imagens e outros conteúdos<br>
+</li>
+<li>Usa padrões aprendidos em grandes volumes de dados<br>
+</li>
+<li>Não tem consciência nem compreensão</li>
+</ul>
+</div><div class="column" style="width:2%;">
+
+</div><div class="column" style="width:49%;">
+<p>🧠 <strong>IA Geral (AGI)</strong></p>
+<ul>
+<li>Habilidade de aprender qualquer tarefa cognitiva<br>
+</li>
+<li>Equivalente (ou superior) à inteligência humana<br>
+</li>
+<li>Ainda <strong>não foi alcançada</strong></li>
+</ul>
+</div></section>
+<section id="e-a-singularidade" class="slide level2 center">
+<h2>E a Singularidade?</h2>
+<p>🌌 <strong>Singularidade Tecnológica</strong></p>
+<ul>
+<li>Futuro hipotético onde a IA supera amplamente a inteligência humana<br>
+</li>
+<li>Mudanças imprevisíveis e irreversíveis na sociedade</li>
+</ul>
+<p>⚠️ Não é consenso entre especialistas<br>
+⚠️ Mais presente em narrativas de ficção e futurologia</p>
+</section>
+<section id="section" class="slide level2 center">
+<h2></h2>
+
+<img data-src="https://ericbrasil.com.br/cclhm00114/aulas/assets/HQ_ChatGPT_20250410_103434.png" class="r-stretch quarto-figure-center"><p class="caption">IA Generativa, IA Geral e Singularidade - Criada pelo CHATGPT em 10/04/2025</p></section>
+<section id="características-gerais-da-iagen" class="slide level2 center">
+<h2>Características Gerais da IAGen</h2>
+<ul>
+<li>Baseia-se em modelos avançados que identificam padrões em grandes volumes de dados.</li>
+<li>Aprende com dados massivos</li>
+<li>Produz conteúdo “original” e coerente</li>
+<li>Funciona com base em <strong>probabilidades</strong>, sem consciência</li>
+<li>Pode <strong>alucinar</strong> (gerar erros ou invenções convincentes)</li>
+<li>Requer <strong>validação humana constante</strong></li>
+</ul>
+</section>
+<section id="o-que-são-llms" class="slide level2 center">
+<h2>O que são LLMs?</h2>
+<p>📚 <strong>LLM</strong> = <em>Large Language Model</em> (Modelo de Linguagem de Grande Escala)</p>
+<p>São redes neurais treinadas com bilhões de palavras para:</p>
+<ul>
+<li>Entender e gerar linguagem natural</li>
+<li>Realizar tarefas complexas de texto (resumos, respostas, análises)</li>
+</ul>
+</section>
+<section id="o-que-são-redes-neurais" class="slide level2 center">
+<h2>O que são redes neurais?</h2>
+<p>🧠 Inspiradas no cérebro humano, redes neurais são estruturas matemáticas que:</p>
+<ul>
+<li>Recebem <strong>entradas</strong> (textos, imagens, números)</li>
+<li>Processam essas entradas em <strong>camadas</strong> de nós (neurônios artificiais)</li>
+<li>Aprendem a <strong>reconhecer padrões</strong> e gerar saídas (respostas)</li>
+<li>Com o tempo, ajustam seus pesos internos para melhorar os resultados.</li>
+</ul>
+</section>
+<section id="deep-learning" class="slide level2 center">
+<h2>Deep Learning</h2>
+<ul>
+<li>Conjunto de técnicas de <strong>aprendizado de máquina</strong> que usa redes neurais com <strong>múltiplas camadas</strong>.<br>
+</li>
+<li>Cada camada aprende representações mais complexas dos dados.<br>
+</li>
+<li>A “profundidade” se refere ao <strong>número de camadas</strong> de neurônios artificiais.</li>
+</ul>
+</section>
+<section id="treinamento-como-o-modelo-aprende" class="slide level2 center">
+<h2>Treinamento: como o modelo aprende?</h2>
+<ol type="1">
+<li>O modelo <strong>prevê uma palavra</strong> em uma sequência.<br>
+</li>
+<li>Compara com a palavra real do corpus.<br>
+</li>
+<li>Calcula o <strong>erro (diferença)</strong> entre previsão e realidade.<br>
+</li>
+<li><strong>Ajusta automaticamente os pesos internos</strong> para reduzir o erro.<br>
+</li>
+<li>Repete bilhões de vezes até aprender padrões estáveis.</li>
+</ol>
+<p>⚙️ Esse processo iterativo é a base do <strong>aprendizado de máquina</strong> em redes neurais profundas.</p>
+</section>
+<section id="o-que-são-os-parâmetros" class="slide level2 center">
+<h2>O que são os “parâmetros”?</h2>
+<p>🔢 <strong>Parâmetros = pesos e vieses (biases)</strong> das conexões entre neurônios.</p>
+<ul>
+<li>Cada parâmetro define <strong>como uma entrada influencia uma saída</strong>.<br>
+</li>
+<li>Eles são <strong>ajustados durante o treinamento</strong> — é isso que o modelo realmente “aprende”.</li>
+</ul>
+</section>
+<section id="o-que-são-os-parâmetros-1" class="slide level2 center">
+<h2>O que são os “parâmetros”?</h2>
+<p>Em termos simples:</p>
+<blockquote>
+<p>Cada parâmetro é um <strong>número</strong> que representa um ajuste aprendido.<br>
+Quanto mais parâmetros, maior a <strong>capacidade de representar padrões complexos</strong>.</p>
+</blockquote>
+</section>
+<section id="dimensão-dos-modelos" class="slide level2 center">
+<h2>Dimensão dos modelos</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Modelo</th>
+<th style="text-align: center;">Ano</th>
+<th style="text-align: center;">Parâmetros</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">GPT-2</td>
+<td style="text-align: center;">2019</td>
+<td style="text-align: center;">1,5 bilhão</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GPT-3</td>
+<td style="text-align: center;">2020</td>
+<td style="text-align: center;">175 bilhões</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GPT-4</td>
+<td style="text-align: center;">2023</td>
+<td style="text-align: center;">≃ 1 trilhão †</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GPT-5</td>
+<td style="text-align: center;">2025</td>
+<td style="text-align: center;">≃ 52,5 trilhões *</td>
+</tr>
+</tbody>
+</table>
+<p>† Estimativa não confirmada pela OpenAI.</p>
+<p>* Mixture-of-Experts (MoE) + Modelo unificado + Janela de contexto expandida. Estimativa não confirmada oficialmente.</p>
+</section>
+<section id="word-embeddings" class="slide level2 center">
+<h2>Word Embeddings</h2>
+<p><strong>Como a máquina “entende” palavras?</strong></p>
+<ul>
+<li>Cada palavra é convertida em um <strong>vetor numérico</strong> (lista de números).<br>
+</li>
+<li>Palavras com sentidos semelhantes ficam <strong>próximas no espaço vetorial</strong>.</li>
+</ul>
+</section>
+<section id="transformers" class="slide level2 center">
+<h2>Transformers</h2>
+<ul>
+<li>Introduzidos por Vaswani et al.&nbsp;(2017): <em>“Attention is All You Need”</em><br>
+</li>
+<li>Substituíram redes recorrentes (RNNs) por <strong>mecanismos de atenção</strong>.</li>
+</ul>
+<p><strong>Atenção</strong> = o modelo decide quais palavras anteriores são relevantes para prever a próxima palavra.</p>
+</section>
+<section id="como-o-transformer-funciona" class="slide level2 center">
+<h2>Como o Transformer funciona?</h2>
+<p>Cada camada realiza três passos:</p>
+<ol type="1">
+<li><strong>Codifica</strong> o contexto das palavras anteriores;<br>
+</li>
+<li><strong>Aplica atenção</strong> para focar nas partes mais relevantes;<br>
+</li>
+<li><strong>Gera predições</strong> ajustadas pela probabilidade.</li>
+</ol>
+<p>As camadas se empilham — cada uma refina a compreensão da anterior.</p>
+<p>Resultado: o modelo aprende <strong>estrutura, estilo e contexto</strong> de linguagem.</p>
+</section>
+<section id="do-modelo-ao-diálogo" class="slide level2 center">
+<h2>Do modelo ao diálogo</h2>
+<p>Textos =&gt; <strong>Tokens</strong> (pedaços de palavras) =&gt; <strong>Probabilidades</strong> =&gt; <strong>Predição de palavras</strong> =&gt; <strong>Resposta gerada</strong></p>
+<ul>
+<li>Mantém o contexto da conversa por meio de <strong>atenção e embeddings</strong>.</li>
+<li>Cada resposta é uma <strong>nova previsão probabilística</strong>, não uma busca em banco de dados.</li>
+</ul>
+</section>
+<section id="como-se-estrutura-um-chatbot-com-ia" class="slide level2 center">
+<h2>Como se estrutura um chatbot com IA?</h2>
+<ul>
+<li><strong>Modelo base (LLM)</strong>: entende e gera respostas</li>
+<li><strong>Interface (chat)</strong>: onde ocorre a interação</li>
+<li><strong>Regras e filtros</strong>: para segurança e adequação</li>
+<li><strong>Memória contextual</strong>: para lembrar o que foi dito</li>
+</ul>
+</section>
+<section id="temperatura-e-criatividade" class="slide level2 center">
+<h2>Temperatura e Criatividade</h2>
+<p>É um <strong>parâmetro de controle de aleatoriedade</strong> na geração de texto:</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Valor</th>
+<th style="text-align: left;">Efeito</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">🔹 <strong>Baixa (≈ 0.1–0.3)</strong></td>
+<td style="text-align: left;">Respostas mais previsíveis e consistentes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">🔸 <strong>Média (≈ 0.5–0.7)</strong></td>
+<td style="text-align: left;">Equilíbrio entre coerência e criatividade</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">🔺 <strong>Alta (≈ 0.8–1.0+)</strong></td>
+<td style="text-align: left;">Respostas criativas, mas menos estáveis</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="controle-da-temperatura" class="slide level2 center">
+<h2>Controle da Temperatura</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 40%">
+<col style="width: 32%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Contexto</th>
+<th style="text-align: left;">Pode alterar?</th>
+<th style="text-align: left;">Observação</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">💬 <strong>Chatbots prontos</strong> (ChatGPT, Gemini, Copilot)</td>
+<td style="text-align: left;">❌ Não</td>
+<td style="text-align: left;">Valor pré-definido pelo sistema</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">🧠 <strong>API / código</strong> (<code>temperature=</code>)</td>
+<td style="text-align: left;">✅ Sim</td>
+<td style="text-align: left;">Controla a criatividade e variação das respostas</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="rag-ia-com-memória-de-fontes" class="slide level2 center">
+<h2>RAG: IA com memória de fontes</h2>
+<p>📚 <strong>RAG</strong> = <em>Retrieval-Augmented Generation</em> (Geração por Recuperação Aumentada)</p>
+<ul>
+<li>O modelo <strong>busca documentos relevantes</strong> em uma base de conhecimento antes de gerar a resposta;</li>
+<li>Ancora a resposta em <strong>fontes verificáveis</strong>, reduzindo alucinações;</li>
+<li>Permite trabalhar com <strong>acervos, corpus e fontes primárias próprias</strong> — não apenas com o que o modelo aprendeu no treinamento.</li>
+</ul>
+</section>
+<section id="rag-ia-com-memória-de-fontes-1" class="slide level2 center">
+<h2>RAG: IA com memória de fontes</h2>
+<p><strong>Exemplos na pesquisa em humanidades:</strong></p>
+<ul>
+<li>Perguntas sobre um corpus histórico digitalizado</li>
+<li>Indexação e consulta semântica de acervos documentais</li>
+<li>Análise de grandes conjuntos de fontes primárias</li>
+</ul>
+</section>
+<section id="agentes-de-ia" class="slide level2 center">
+<h2>Agentes de IA</h2>
+<p>🤖 <strong>Agentes</strong> são sistemas que combinam um LLM com <strong>ferramentas externas</strong> e capacidade de <strong>encadear decisões e ações</strong>.</p>
+<ul>
+<li>Podem executar <strong>sequências de tarefas de forma autônoma</strong>;</li>
+<li>Usam ferramentas: busca na web, execução de código, acesso a APIs, leitura e escrita de arquivos;</li>
+<li>Permitem construir <strong>pipelines de pesquisa</strong> complexos com mínima intervenção manual.</li>
+</ul>
+</section>
+<section id="agentes-de-ia-1" class="slide level2 center">
+<h2>Agentes de IA</h2>
+<p><strong>Exemplos na pesquisa em humanidades:</strong></p>
+<ul>
+<li>Raspagem, transcrição e análise de fontes em sequência</li>
+<li>Geração automatizada de metadados para acervos</li>
+<li>Assistentes de pesquisa que consultam bases, cruzam dados e produzem relatórios</li>
+</ul>
+<blockquote>
+<p>⚠️ Agentes ampliam o poder da IA — e também seus riscos. Supervisão humana é indispensável.</p>
+</blockquote>
+</section>
+<section id="por-que-pesquisadores-das-humanidades-precisam-conhecer-a-ia" class="slide level2 center">
+<h2>Por que pesquisadores das humanidades precisam conhecer a IA?</h2>
+<p><br></p>
+<div class="column" style="width:40%;">
+<p><img data-src="https://ericbrasil.com.br/cclhm00114/aulas/assets/IA-BOT_ChatGPT_20250410_091806.png"></p>
+</div><div class="column" style="width:60%;">
+<p><br> <br></p>
+<blockquote>
+<p>💬 É só hype?</p>
+</blockquote>
+</div></section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="https://raw.githubusercontent.com/ericbrasiln/hdan/refs/heads/main/imgs/LABHDUFBA.png" class="slide-logo"></p>
+<div class="footer footer-default">
+<p>LABHDUFBA | <a href="https://labhdufba.github.io/contact/">Entre em contato</a></p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="encontro1_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="encontro1_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="encontro1_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="encontro1_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="encontro1_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="encontro1_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="encontro1_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="encontro1_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="encontro1_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="encontro1_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="encontro1_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copiada");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copiada");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
